@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<header>
+  <nav class="navbar is-spaced is-primary is-fullwidth" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand mt-2">
+      <h1 class="title is-size-2-desktop is-size-3 has-text-white"><i class="fas fa-wallet mr-2" aria-hidden="true"></i>AhorrADAs</h1>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons is-normal">
+          <button class=" button is-medium navbar-item is-primary mt-1"><i class="fas fa-chart-line mr-2"></i>Balance</button>
+          <button class="button is-medium navbar-item is-primary mt-1"><i class="fas fa-tag mr-2"></i>Categorias</button>
+          <button class="button is-medium navbar-item is-primary mt-1"><i class="fas fa-char-pie mr-2"></i>Reporte</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+    <section  class="section">
+      <div class="columns">
+        <div class="column is-offset-1 is-3 ">
+          <article class="box mt-1">
+            <h3 class="title is-2 has-text-grey-dark is-light ">Balance</h3>
+            <div class="columns mt-1">
+              <div class="column  is-start">
+                <p class="subtitle has-text-grey-dark">Ganancias</p>
+              </div>
+              <div class="column  is-end">
+                <p class="subtitle has-text-right has-text-success ganancias-total">$0</p>
+              </div>
+            </div>  
+            <div class="columns mt-1">
+              <div class="column is-start">
+                <p class="subtitle has-text-grey-dark">Gastos</p>
+              </div>
+              <div class="column is-end">
+                <p class="subtitle has-text-right has-text-danger gastos-total">-$0</p>
+              </div>
+            </div>  
+            <div class="columns mt-1">
+              <div class="column is-start">
+                <p class="title has-text-grey-dark is-4">Total</p>
+              </div>
+              <div class="column  is-end">
+                <p class="subtitle has-text-right has-text-black">0</p>
+              </div>
+            </div> 
+          </article>
+          <article class="box ">
+            <div class="columns">
+              <div class="column is-6">
+                <h2 class="title is-3 mt-1 has-text-dark">Filtros</h2>
+              </div>
+              <div class="column mt-2 is-end is-6">
+                <button class="column button is-ghost mt-0 boton-filtros">Ocultar filtros</button>
+              </div>
+            </div>
+            <div class="contenedor-de-filtros">
+              <div class="field">
+                <label for="select-tipo" class="label is-size-5">Tipo</label>
+                <div class="control">
+                  <div class="select is-normal is-size-5 is-fullwidth">
+                    <select id="select-tipo  is-multiple">
+                      <option value="todos">Todos</option>
+                      <option value="gastos">Gastos</option>
+                      <option value="ganancia">Ganancia</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor-de-filtros">
+              <div class="field">
+                <label for="select-tipo" class="label mt-1 is-size-5">Categoria</label>
+                <div class="control">
+                  <div class="select is-normal is-size-5 is-fullwidth">
+                    <select id="select-tipo  is-multiple">
+                      <option value="todos">Todas</option>
+                      <option value="comidas">Comidas</option>
+                      <option value="servicios">Servicios</option>
+                      <option value="salidas">Salidas</option>
+                      <option value="educacion">Educacion</option>
+                      <option value="transporte">Transporte</option>
+                      <option value="trabajo">Trabajo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>  
+        </div>
+        <div class=" column is-7">
+            <div class="box">
+              <h2 class="title is-3 has-text-grey-dark">Operaciones</h2>
+              <button class="button has-text-right is-primary">+ Nueva Operacion</button>
+            </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
